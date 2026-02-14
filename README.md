@@ -1,1 +1,2 @@
 # EEG-Dementia-Review-Literature-Study
+This repository contains a LaTeX-based academic review paper examining the application of machine learning techniques for detecting Alzheimer's Disease and Frontotemporal Dementia (FTD) using electroencephalography (EEG) signals. The paper specifically focuses on multiclass classification approaches incorporating Knowledge Distillation and Sparse Learning methodologies.
