@@ -1,0 +1,51 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{setspace} % Added for line spacing control
+
+% Adjust margins
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=25mm,
+ top=25mm,
+ right=25mm,
+ bottom=25mm,
+}
+\onehalfspacing % Set line spacing to 1.5 to fill the page as requested
+% APA 7 citation setup using biblatex
+\usepackage[style=apa, backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{library.bib}
+
+
+% Title Information
+\title{\textbf{Descriptive Review on Detection of Alzheimer and Frontotemporal Dementia using Multiclass EEG Knowledge Distillation and Sparse Learning }}
+\author{Raymond NTUMWA\\BSc Computer Science 2:2 \\
+B30616}
+\date{}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\doublespacing
+\newpage
+
+% --- Introduction ---
+Alzheimer’s disease and Frontotemporal Dementia (FTD) not only affect cognitive function and quality of life, but also their diagnosis is costly and unavailable for many people living in developing countries. While the EEG could serve as a more affordable alternative to traditional EEG, the high-dimensional nature and noise associated with EEG makes EEG difficult to analyze. Advanced machine learning techniques, such as Sparse Learning and Knowledge Distillation, have emerged as effective ways to improve the accuracy of EEG classification and decrease the computational burden of classification.
+
+By employing L1 regularization techniques to identify only those features that contribute to classification, Sparse Learning reduces overfitting and increases efficiency of classification when using limited-resource hardware, thus allowing early screening to be conducted in many underserved areas.\parencite{Contino2024}.
+
+% --- Section 2: Knowledge Distillation ---
+Knowledge Distillation compresses large artificial intelligence (AI) models into smaller models, and as such transfers knowledge of the teacher AI model to a student AI model by using soft probability outputs. Thus, Knowledge Distillation helps maintain the accuracy of large AI models while decreasing the computational demands associated with those models; therefore, knowledge distilled AI models could serve as lightweight, EEG-based dementia diagnostic tools that could be used on portable and wearable devices in low-resource settings.\parencite{Contino2024,Lee2025}.
+
+The scarcity of neurologists in Uganda, combined with the lack of advanced imaging capabilities, poses a significant obstacle to the early identification of dementia. Utilizing lightweight artificial intelligence systems with electroencephalography (EEG) technology and applying knowledge distillation methods to sparse learning provides an affordable means of screening people for dementia. The integration of these systems into telehealth services enables a network between urban neurological specialists and rural healthcare providers to improve access to early diagnoses while reducing the costs associated with treating dementia in the long term.
+
+Sparse learning, knowledge distillation, and multi-class classification form an important intersection of computer science and data science within the medical field. By using these methodologies, EEG-based techniques have demonstrated improved efficiency and diagnostic accuracy in detecting dementia and are scalable for use in low-resource healthcare settings, ultimately providing better delivery of neurological care.
+\newpage
+\printbibliography
+
+\end{document}
